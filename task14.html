@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>задачки</title>
+</head>
+
+<body>
+    <script>
+        function readNumber() {
+            let num;
+            do {
+                num = prompt('Введи число', "")
+            } while (!isFinite(num));
+            if (num == null || num == "") return null;
+            return +num;
+        }
+        alert(`Число: ${readNumber()}`);
+    </script>
+
+</body>
+
+</html>
