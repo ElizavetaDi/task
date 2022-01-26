@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>задачки</title>
+</head>
+
+<body>
+    <script>
+        function sumInput() {
+
+            let arr = [];
+
+            while (true) {
+
+                let a = prompt('Введите число', '');
+
+                if (a === null || a == '') break;
+
+                arr.push(+a);
+
+            }
+            let sum = 0;
+            for (let i of arr) {
+
+                sum += i;
+
+            }
+
+            return sum;
+
+        }
+        alert(sumInput());
+    </script>
+
+</body>
+
+</html>
